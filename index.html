@@ -1,111 +1,221 @@
-        <!-- ANEXO GRÁFICO: PLANO CONCEPTUAL -->
-        <div class="card card-formal" style="page-break-before: always;">
-            <h2>Anexo Técnico: Propuesta de Distribución Espacial (Plano Conceptual)</h2>
-            <p>El siguiente esquema ilustra una distribución arquitectónica preliminar para un lote estimado de <strong>4.500 m² (75 m × 60 m)</strong>, optimizando el espacio para la práctica segura del patinaje y deportes múltiples en el Centro Poblado Dinamarca:</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartilla y Perfil de Proyecto - Centro Poblado Dinamarca</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e5c33; /* Verde llanero */
+            --secondary: #e6b012; /* Amarillo atardecer */
+            --dark: #2c3e50;
+            --light: #f4f7f6;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), #2e8b4e);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            font-size: 2.1rem;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.15rem;
+            margin-top: 0.5rem;
+            font-weight: 300;
+        }
+        .badge {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--dark);
+            font-weight: 700;
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 920px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+        }
+        .card-yellow {
+            border-left: 5px solid var(--secondary);
+            background-color: #fffdf3;
+        }
+        .card-formal {
+            border-left: 5px solid var(--dark);
+            border-top: 3px solid var(--primary);
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 1.5rem;
+        }
+        .highlight {
+            background-color: #e8f5e9;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--primary);
+            margin: 1rem 0;
+        }
+        .highlight-yellow {
+            background-color: #fef9e7;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--secondary);
+            margin: 1rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
 
-            <div style="width: 100%; overflow-x: auto; margin: 1.5rem 0; border: 2px solid #2c3e50; border-radius: 6px; background: #eef5f0; padding: 10px; box-sizing: border-box;">
-                <svg viewBox="0 0 800 540" width="100%" height="auto" xmlns="http://w3.org" style="font-family: 'Open Sans', sans-serif; display: block;">
-                    <!-- Fondo del predio / Zonas verdes -->
-                    <rect x="20" y="20" width="760" height="460" rx="8" fill="#d5ebd9" stroke="#1e5c33" stroke-width="4"/>
-                    
-                    <!-- Senderos peatonales internos -->
-                    <rect x="35" y="260" width="730" height="22" fill="#e0e0e0"/>
-                    <rect x="445" y="35" width="22" height="430" fill="#e0e0e0"/>
+    <header>
+        <h1>Construyendo el Mañana de Dinamarca</h1>
+        <p>Guía Ciudadana de Formulación y Perfil Técnico de Proyecto Comunitario</p>
+        <div class="badge">Centro Poblado Dinamarca • Acacías, Meta</div>
+    </header>
 
-                    <!-- ZONA 1: PISTA DE PATINAJE (Izquierda) -->
-                    <g id="pista-patinaje">
-                        <!-- Plataforma exterior de la pista -->
-                        <rect x="45" y="45" width="380" height="200" rx="95" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
-                        <!-- Óvalo de rodadura (Pista azul) -->
-                        <rect x="60" y="60" width="350" height="170" rx="80" fill="#2980b9" stroke="#ffffff" stroke-width="2"/>
-                        <!-- Carriles internos -->
-                        <rect x="75" y="75" width="320" height="140" rx="65" fill="none" stroke="#85c1e9" stroke-width="1.5" stroke-dasharray="6,4"/>
-                        <!-- Isla central verde/calentamiento -->
-                        <rect x="95" y="95" width="280" height="100" rx="45" fill="#27ae60" stroke="#ffffff" stroke-width="2"/>
-                        <!-- Etiquetas Pista -->
-                        <text x="235" y="140" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">PISTA DE PATINAJE</text>
-                        <text x="235" y="158" font-size="11" fill="#eafaf1" text-anchor="middle">Óvalo Formativo y Recreativo (45m x 24m)</text>
-                    </g>
+    <div class="container">
 
-                    <!-- Graderías Pista de Patinaje -->
-                    <rect x="115" y="288" width="240" height="26" rx="3" fill="#e6b012" stroke="#2c3e50" stroke-width="1.5"/>
-                    <text x="235" y="305" font-size="11" font-weight="bold" fill="#2c3e50" text-anchor="middle">GRADERÍAS Y CUBIERTA PÚBLICA</text>
+        <!-- INTRODUCCIÓN -->
+        <div class="card">
+            <h2>Introducción: De la Participación Ciudadana a la Gestión Institucional</h2>
+            <p>Vecinos, líderes de la Junta de Acción Comunal (JAC) y entidades aliadas: el <strong>Centro Poblado Dinamarca</strong>, siendo el núcleo rural más poblado y dinámico de Acacías con más de <strong>7.000 habitantes</strong>, requiere herramientas técnicas que permitan convertir las necesidades de su comunidad en iniciativas estructuradas.</p>
+            <p>Esta cartilla cumple un doble propósito: servir como <strong>guía práctica de capacitación comunitaria</strong> y presentar un <strong>modelo técnico base</strong> listo para ser estudiado y radicado ante la JAC, el sector empresarial y la Administración Municipal.</p>
+        </div>
 
-                    <!-- ZONA 2: PARQUE INFANTIL Y BIOSALUDABLE (Abajo Izquierda) -->
-                    <g id="parque-biosaludable">
-                        <rect x="45" y="330" width="380" height="130" rx="8" fill="#a9dfbf" stroke="#1e5c33" stroke-width="2" stroke-dasharray="5,3"/>
-                        <circle cx="135" cy="395" r="35" fill="#f39c12" opacity="0.85"/>
-                        <circle cx="245" cy="395" r="35" fill="#e74c3c" opacity="0.85"/>
-                        <circle cx="345" cy="395" r="30" fill="#16a085" opacity="0.85"/>
-                        <text x="235" y="352" font-size="13" font-weight="bold" fill="#1e5c33" text-anchor="middle">PARQUE INFANTIL Y GIMNASIO BIOSALUDABLE</text>
-                        <text x="235" y="448" font-size="11" fill="#1e5c33" text-anchor="middle">Zona de recreación familiar y arborización nativa</text>
-                    </g>
-
-                    <!-- ZONA 3: CANCHA MÚLTIPLE CUBIERTA (Arriba Derecha) -->
-                    <g id="cancha-multiple">
-                        <rect x="485" y="45" width="275" height="195" rx="4" fill="#d35400" stroke="#2c3e50" stroke-width="2.5"/>
-                        <!-- Líneas reglamentarias -->
-                        <rect x="500" y="58" width="245" height="169" fill="none" stroke="#ffffff" stroke-width="2"/>
-                        <line x1="622.5" y1="58" x2="622.5" y2="227" stroke="#ffffff" stroke-width="2"/>
-                        <circle cx="622.5" cy="142.5" r="24" fill="none" stroke="#ffffff" stroke-width="2"/>
-                        <!-- Áreas de arco -->
-                        <path d="M 500 105 A 35 35 0 0 1 500 180" fill="none" stroke="#ffffff" stroke-width="2"/>
-                        <path d="M 745 105 A 35 35 0 0 0 745 180" fill="none" stroke="#ffffff" stroke-width="2"/>
-                        <!-- Etiquetas Cancha -->
-                        <rect x="532" y="126" width="180" height="34" rx="4" fill="rgba(44,62,80,0.85)"/>
-                        <text x="622" y="142" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">CANCHA MÚLTIPLE</text>
-                        <text x="622" y="155" font-size="10" fill="#f9e79f" text-anchor="middle">Microfútbol • Baloncesto • Voleibol</text>
-                    </g>
-
-                    <!-- ZONA 4: SERVICIOS Y ADMINISTRACIÓN (Centro Derecha) -->
-                    <g id="servicios">
-                        <rect x="485" y="295" width="275" height="75" rx="4" fill="#34495e" stroke="#2c3e50" stroke-width="2"/>
-                        <line x1="576" y1="295" x2="576" y2="370" stroke="#ffffff" stroke-width="1.5"/>
-                        <line x1="668" y1="295" x2="668" y2="370" stroke="#ffffff" stroke-width="1.5"/>
-                        <text x="530" y="330" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">BAÑOS Y</text>
-                        <text x="530" y="345" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">CAMERINOS</text>
-                        <text x="622" y="330" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">PRIMEROS</text>
-                        <text x="622" y="345" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">AUXILIOS</text>
-                        <text x="714" y="330" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">BODEGA</text>
-                        <text x="714" y="345" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">DEPORTIVA</text>
-                    </g>
-
-                    <!-- ZONA 5: PARQUEADERO Y ACCESO PRINCIPAL (Abajo Derecha) -->
-                    <g id="acceso-parqueo">
-                        <rect x="485" y="385" width="275" height="75" rx="4" fill="#95a5a6" stroke="#2c3e50" stroke-width="1.5"/>
-                        <text x="622" y="418" font-size="12" font-weight="bold" fill="#2c3e50" text-anchor="middle">BAHÍA DE PARQUEO Y BICICLETEROS</text>
-                        <text x="622" y="435" font-size="10" fill="#2c3e50" text-anchor="middle">Acceso vehicular y ambulancia</text>
-                    </g>
-
-                    <!-- VÍA DE ACCESO EXTERIOR Y PORTERÍA -->
-                    <rect x="20" y="490" width="760" height="35" fill="#2c3e50"/>
-                    <line x1="30" y1="507.5" x2="770" y2="507.5" stroke="#f1c40f" stroke-width="2" stroke-dasharray="15,10"/>
-                    <rect x="415" y="472" width="85" height="22" rx="3" fill="#e6b012" stroke="#2c3e50" stroke-width="1.5"/>
-                    <text x="457.5" y="487" font-size="10" font-weight="bold" fill="#2c3e50" text-anchor="middle">ACCESO PRINCIPAL</text>
-                    <text x="200" y="512" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">VÍA PRINCIPAL CENTRO POBLADO DINAMARCA</text>
-                </svg>
+        <!-- CAPÍTULO 1 -->
+        <div class="card">
+            <h2>Capítulo 1: Diagnóstico y Formulación de la Iniciativa</h2>
+            <p>Partiendo de los ejercicios de diagnóstico participativo realizados con la comunidad, priorizamos las problemáticas críticas del territorio para traducirlas en soluciones concretas, viables y medibles.</p>
+            
+            <div class="highlight">
+                <strong>🛠️ Actividad Práctica #1 en Taller Comunitario:</strong><br>
+                En mesas de trabajo, los asistentes revisan el siguiente modelo estructurado y validan las necesidades, beneficiarios y alcance del proyecto para su presentación oficial.
             </div>
 
+            <h3>Perfil Técnico Base: Proyecto Priorizado en Dinamarca</h3>
             <table>
                 <tr>
-                    <th style="width: 30%;">Zona del Plano</th>
-                    <th>Especificación Conceptual</th>
+                    <th style="width: 28%;">Componente</th>
+                    <th>Formulación Técnica para Estudio Institucional</th>
                 </tr>
                 <tr>
-                    <td><strong>1. Pista de Patinaje</strong></td>
-                    <td>Óvalo pavimentado con acabado liso de alta adherencia, baranda de protección perimetral, zona central de calentamiento y graderías cubiertas para padres de familia.</td>
+                    <td><strong>Título del Proyecto</strong></td>
+                    <td><strong>Gestión Predial y Construcción por Etapas del Complejo Deportivo Multidisciplinario (con Pista de Patinaje) en el Centro Poblado Dinamarca, Acacías – Meta.</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>2. Cancha Múltiple Cubierta</strong></td>
-                    <td>Placa polideportiva demarcada para microfútbol, baloncesto y voleibol con iluminación LED para jornadas nocturnas.</td>
+                    <td><strong>Planteamiento del Problema</strong></td>
+                    <td>El Centro Poblado Dinamarca supera actualmente los <strong>7.000 habitantes</strong> y cuenta únicamente con una cancha de fútbol y un polideportivo público. Esta insuficiencia de infraestructura obliga a decenas de niños, niñas y jóvenes a practicar patinaje y otros deportes en las calles y vías vehiculares, exponiéndolos diariamente a riesgos de accidentes de tránsito e inseguridad.</td>
                 </tr>
                 <tr>
-                    <td><strong>3. Módulo de Servicios</strong></td>
-                    <td>Baterías sanitarias inclusivas, camerinos, cuarto de almacenamiento para clubes deportivos y punto de primeros auxilios.</td>
+                    <td><strong>Objetivo General</strong></td>
+                    <td>Gestionar la adquisición predial y desarrollar un complejo deportivo multidisciplinario seguro y adecuado que fomente la formación deportiva, la recreación y la protección integral de la niñez y juventud de Dinamarca.</td>
                 </tr>
                 <tr>
-                    <td><strong>4. Zonas Verdes y Acceso</strong></td>
-                    <td>Parque infantil, máquinas biosaludables, senderos peatonales accesibles, bahía de parqueo y acceso directo para vehículos de emergencia.</td>
+                    <td><strong>Población Beneficiaria</strong></td>
+                    <td><strong>Directos:</strong> Más de 800 niños, niñas y jóvenes deportistas, escuelas de formación y clubes locales.<br><strong>Indirectos:</strong> Los más de 7.000 habitantes del centro poblado y veredas aledañas.</td>
                 </tr>
             </table>
         </div>
+
+        <!-- CAPÍTULO 2 -->
+        <div class="card card-yellow">
+            <h2>Capítulo 2: Estructuración Técnica – Fases, Presupuesto y Cronograma</h2>
+            <p>Dado que el centro poblado no dispone actualmente de un lote municipal con el área suficiente, el proyecto se estructura de manera realista en <strong>dos grandes fases</strong> para facilitar su cofinanciación entre el sector privado, la comunidad y el Estado:</p>
+            
+            <h3>A. Estrategia de Ejecución por Etapas y Presupuesto</h3>
+            <table>
+                <tr>
+                    <th>Etapa del Proyecto</th>
+                    <th>Alcance Técnico</th>
+                    <th>Fuentes de Financiación Propuestas</th>
+                </tr>
+                <tr>
+                    <td><strong>Etapa 1: Gestión y Adquisición Predial</strong></td>
+                    <td>Identificación de lote plano (mínimo 2.500 m² a 4.500 m²), estudio de títulos, certificado de uso de suelo y compra del predio a nombre de la JAC o para cesión al municipio.</td>
+                    <td><strong>Alianza RSE y Comunidad:</strong> Aportes de empresas agroindustriales/energéticas de la zona, comercio local y actividades de recaudo comunitario.</td>
+                </tr>
+                <tr>
+                    <td><strong>Etapa 2: Estudios, Diseños y Obra Civil</strong></td>
+                    <td>Levantamiento topográfico, diseños arquitectónicos, construcción de pista de patinaje reglamentaria/formativa, cancha múltiple, iluminación y cerramiento.</td>
+                    <td><strong>Inversión Pública y Contrapartida:</strong> Alcaldía de Acacías (Banco de Proyectos), Gobernación del Meta (Idermeta) y mano de obra comunitaria (mingas de limpieza).</td>
+                </tr>
+            </table>
+
+            <h3>B. Cronograma de Gestión Inicial (Primeros 3 Meses)</h3>
+            <table>
+                <tr>
+                    <th>Periodo</th>
+                    <th>Actividad Clave</th>
+                    <th>Responsables</th>
+                </tr>
+                <tr>
+                    <td><strong>Mes 1</strong></td>
+                    <td>Asamblea comunitaria, censo oficial de niños deportistas y aval institucional de la Junta de Acción Comunal (JAC).</td>
+                    <td>Comité Pro-Deporte y JAC Dinamarca</td>
+                </tr>
+                <tr>
+                    <td><strong>Mes 2</strong></td>
