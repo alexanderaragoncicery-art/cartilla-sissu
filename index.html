@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartilla Digital de Proyectos - Centro Poblado Dinamarca</title>
+    <title>Cartilla y Perfil de Proyecto - Centro Poblado Dinamarca</title>
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
         :root {
@@ -29,16 +29,27 @@
         header h1 {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
-            font-size: 2.2rem;
+            font-size: 2.1rem;
             text-transform: uppercase;
         }
         header p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             margin-top: 0.5rem;
             font-weight: 300;
         }
+        .badge {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--dark);
+            font-weight: 700;
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
         .container {
-            max-width: 900px;
+            max-width: 920px;
             margin: 2rem auto;
             padding: 0 1.5rem;
         }
@@ -53,6 +64,10 @@
         .card-yellow {
             border-left: 5px solid var(--secondary);
             background-color: #fffdf3;
+        }
+        .card-formal {
+            border-left: 5px solid var(--dark);
+            border-top: 3px solid var(--primary);
         }
         h2 {
             font-family: 'Montserrat', sans-serif;
@@ -84,6 +99,7 @@
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
+            font-size: 0.95rem;
         }
         table, th, td {
             border: 1px solid #ddd;
@@ -91,9 +107,14 @@
         th, td {
             padding: 0.75rem;
             text-align: left;
+            vertical-align: top;
         }
         th {
             background-color: var(--primary);
+            color: white;
+        }
+        .th-dark {
+            background-color: var(--dark);
             color: white;
         }
         ul, ol {
@@ -116,99 +137,88 @@
 
     <header>
         <h1>Construyendo el Mañana de Dinamarca</h1>
-        <p>Guía Ciudadana para la Formulación y Gestión de Proyectos Comunitarios</p>
-        <p style="font-size: 0.9rem; opacity: 0.9;">Centro Poblado Dinamarca • Acacías, Meta</p>
+        <p>Guía Ciudadana de Formulación y Perfil Técnico de Proyecto Comunitario</p>
+        <div class="badge">Centro Poblado Dinamarca • Acacías, Meta</div>
     </header>
 
     <div class="container">
 
         <!-- INTRODUCCIÓN -->
         <div class="card">
-            <h2>Introducción: ¡El poder está en nuestras manos!</h2>
-            <p>Vecino y vecina de <strong>Dinamarca</strong>: nadie conoce las necesidades de nuestras veredas, calles y sectores productivos mejor que nosotros mismos. Como el centro poblado más grande de Acacías, tenemos una historia de pujanza inigualable. Esta cartilla digital es una herramienta práctica para que cualquier ciudadano aprenda a transformar sus ideas en proyectos reales, viables y financiables ante las instituciones.</p>
+            <h2>Introducción: De la Participación Ciudadana a la Gestión Institucional</h2>
+            <p>Vecinos, líderes de la Junta de Acción Comunal (JAC) y entidades aliadas: el <strong>Centro Poblado Dinamarca</strong>, siendo el núcleo rural más poblado y dinámico de Acacías con más de <strong>7.000 habitantes</strong>, requiere herramientas técnicas que permitan convertir las necesidades de su comunidad en iniciativas estructuradas.</p>
+            <p>Esta cartilla cumple un doble propósito: servir como <strong>guía práctica de capacitación comunitaria</strong> y presentar un <strong>modelo técnico base</strong> listo para ser estudiado y radicado ante la JAC, el sector empresarial y la Administración Municipal.</p>
         </div>
 
         <!-- CAPÍTULO 1 -->
         <div class="card">
-            <h2>Capítulo 1: De la Necesidad a la Acción Comunitaria</h2>
-            <p>A partir del diagnóstico y el <em>Mapa de Sueños</em> construido colectivamente por nuestra comunidad, identificamos las prioridades más urgentes del territorio. Ahora, el siguiente paso es transformar esas ideas en propuestas técnicas y viables ante las entidades públicas.</p>
+            <h2>Capítulo 1: Diagnóstico y Formulación de la Iniciativa</h2>
+            <p>Partiendo de los ejercicios de diagnóstico participativo realizados con la comunidad, priorizamos las problemáticas críticas del territorio para traducirlas en soluciones concretas, viables y medibles.</p>
             
             <div class="highlight">
-                <strong>🛠️ Actividad Práctica #1 en Taller: Estructurando nuestro proyecto</strong><br>
-                Reunidos en mesas de trabajo, tomemos una necesidad priorizada de Dinamarca y diligenciemos en equipo la siguiente ficha base para darle forma a nuestra solicitud comunitaria.
+                <strong>🛠️ Actividad Práctica #1 en Taller Comunitario:</strong><br>
+                En mesas de trabajo, los asistentes revisan el siguiente modelo estructurado y validan las necesidades, beneficiarios y alcance del proyecto para su presentación oficial.
             </div>
 
-            <h3>Ejemplo Guía: Ficha Simplificada de Idea de Proyecto</h3>
-            <p>Observemos cómo estructurar una iniciativa real de nuestro centro poblado respondiendo estas 5 preguntas clave:</p>
+            <h3>Perfil Técnico Base: Proyecto Priorizado en Dinamarca</h3>
             <table>
                 <tr>
-                    <th>Pregunta Clave</th>
-                    <th>¿A qué responde en Dinamarca?</th>
+                    <th style="width: 28%;">Componente</th>
+                    <th>Formulación Técnica para Estudio Institucional</th>
                 </tr>
                 <tr>
-                    <td><strong>1. ¿Qué se quiere lograr?</strong></td>
-                    <td>Construcción y adecuación de un <strong>Complejo Deportivo Multidisciplinario</strong> (incluyendo pista de patinaje y áreas recreativas) en el Centro Poblado Dinamarca.</td>
+                    <td><strong>Título del Proyecto</strong></td>
+                    <td><strong>Gestión Predial y Construcción por Etapas del Complejo Deportivo Multidisciplinario (con Pista de Patinaje) en el Centro Poblado Dinamarca, Acacías – Meta.</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>2. ¿Por qué es urgente?</strong></td>
-                    <td>Dinamarca supera los <strong>7.000 habitantes</strong> y solo cuenta con una cancha de fútbol y un polideportivo público. Actualmente, decenas de niños y jóvenes practican patinaje y otros deportes en las calles, exponiéndose a accidentes de tránsito y riesgos de seguridad.</td>
+                    <td><strong>Planteamiento del Problema</strong></td>
+                    <td>El Centro Poblado Dinamarca supera actualmente los <strong>7.000 habitantes</strong> y cuenta únicamente con una cancha de fútbol y un polideportivo público. Esta insuficiencia de infraestructura obliga a decenas de niños, niñas y jóvenes a practicar patinaje y otras disciplinas deportivas en las calles y vías vehiculares, exponiéndolos diariamente a riesgos de accidentes de tránsito e inseguridad.</td>
                 </tr>
                 <tr>
-                    <td><strong>3. ¿Quiénes se benefician?</strong></td>
-                    <td>Niños, niñas, jóvenes, escuelas de formación deportiva y familias residentes en el centro poblado y sus veredas aledañas.</td>
+                    <td><strong>Objetivo General</strong></td>
+                    <td>Gestionar la adquisición predial y desarrollar un complejo deportivo multidisciplinario seguro y adecuado que fomente la formación deportiva, la recreación y la protección integral de la niñez y juventud de Dinamarca.</td>
                 </tr>
                 <tr>
-                    <td><strong>4. ¿Cómo lo haremos?</strong></td>
-                    <td>Conformación de comité pro-deporte con la JAC, verificación de predio público disponible, radicación del proyecto ante la Alcaldía de Acacías y el Instituto de Deporte, y jornadas comunitarias de adecuación inicial.</td>
-                </tr>
-                <tr>
-                    <td><strong>5. ¿Cuánto se necesita?</strong></td>
-                    <td>Un cálculo inicial por fases (estudios, adecuación de terreno y pista básica), sumando el presupuesto institucional y el aporte de mano de obra voluntaria de la comunidad.</td>
+                    <td><strong>Población Beneficiaria</strong></td>
+                    <td><strong>Directos:</strong> Más de 800 niños, niñas y jóvenes deportistas, escuelas de formación y clubes locales.<br><strong>Indirectos:</strong> Los más de 7.000 habitantes del centro poblado y veredas aledañas.</td>
                 </tr>
             </table>
         </div>
 
         <!-- CAPÍTULO 2 -->
         <div class="card card-yellow">
-            <h2>Capítulo 2: El ABC Técnico – Presupuesto y Cronograma</h2>
-            <p>Para pasar de la idea a la acción, las instituciones exigen cuentas claras. No necesitamos ser ingenieros para estructurar los dos pilares técnicos de cualquier propuesta:</p>
+            <h2>Capítulo 2: Estructuración Técnica – Fases, Presupuesto y Cronograma</h2>
+            <p>Dado que el centro poblado no dispone actualmente de un lote municipal con el área suficiente, el proyecto se estructura de manera realista en <strong>dos grandes fases</strong> para facilitar su cofinanciación entre el sector privado, la comunidad y el Estado:</p>
             
-            <h3>A. El Presupuesto Transparente</h3>
-            <p>Debemos cotizar de forma honesta cada insumo. En los proyectos de Dinamarca, el aporte propio es nuestra mejor carta. ¡La mano de obra comunitaria (convite o minga) vale dinero! Registremos ese esfuerzo como contrapartida local en la siguiente estructura:</p>
-            <ul>
-                <li><strong>Materiales e Insumos:</strong> Cemento, acero, pintura, cerramientos o dotación deportiva específica según la fase del proyecto.</li>
-                <li><strong>Herramientas y Equipos:</strong> Alquiler de maquinaria de nivelación, motobombas o herramientas menores si la comunidad no las tiene.</li>
-                <li><strong>Contrapartida Comunitaria:</strong> Ejemplo: 15 vecinos aportando 4 jornadas de rocería, limpieza y adecuación de terreno equivalen a un valor económico en jornales que demuestra el compromiso real de la comunidad ante la Alcaldía.</li>
-            </ul>
-
-            <h3>B. El Cronograma Vecinal</h3>
-            <p>Definan tiempos lógicos y alcanzables por etapas. Por ejemplo, para la gestión inicial de un escenario deportivo:</p>
+            <h3>A. Estrategia de Ejecución por Etapas y Presupuesto</h3>
             <table>
                 <tr>
-                    <th>Fase / Tiempo</th>
-                    <th>Actividad Comunitaria</th>
-                    <th>Responsables</th>
+                    <th>Etapa del Proyecto</th>
+                    <th>Alcance Técnico</th>
+                    <th>Fuentes de Financiación Propuestas</th>
                 </tr>
                 <tr>
-                    <td><strong>Semanas 1 y 2</strong></td>
-                    <td>Censo de niños deportistas, recolección de firmas de respaldo y reunión con la JAC.</td>
-                    <td>Comité Pro-Deporte y padres de familia</td>
+                    <td><strong>Etapa 1: Gestión y Adquisición Predial</strong></td>
+                    <td>Identificación de lote plano (mínimo 2.500 m² a 4.000 m²), estudio de títulos, certificado de uso de suelo y compra del predio a nombre de la JAC o para cesión al municipio.</td>
+                    <td><strong>Alianza RSE y Comunidad:</strong> Aportes de empresas agroindustriales/energéticas de la zona, comercio local y actividades de recaudo comunitario.</td>
                 </tr>
                 <tr>
-                    <td><strong>Semanas 3 y 4</strong></td>
-                    <td>Identificación del predio disponible, cotización de fase inicial y redacción de la ficha.</td>
-                    <td>Líderes comunitarios y mesa técnica</td>
-                </tr>
-                <tr>
-                    <td><strong>Semanas 5 y 6</strong></td>
-                    <td>Radicación formal del proyecto ante la Alcaldía de Acacías y solicitud de mesa de trabajo.</td>
-                    <td>Junta de Acción Comunal (JAC)</td>
+                    <td><strong>Etapa 2: Estudios, Diseños y Obra Civil</strong></td>
+                    <td>Levantamiento topográfico, diseños arquitectónicos, construcción de pista de patinaje reglamentaria/formativa, cancha múltiple, iluminación y cerramiento.</td>
+                    <td><strong>Inversión Pública y Contrapartida:</strong> Alcaldía de Acacías (Banco de Proyectos), Gobernación del Meta (Idermeta) y mano de obra comunitaria (mingas de limpieza).</td>
                 </tr>
             </table>
 
-            <div class="highlight-yellow">
-                <strong>🛠️ Actividad Práctica #2 en Taller:</strong><br>
-                En sus grupos, elaboren una lista de 3 aportes materiales o jornadas de trabajo que la comunidad de Dinamarca podría ofrecer como contrapartida para impulsar su proyecto.
-            </div>
-        </div>
-
+            <h3>B. Cronograma de Gestión Inicial (Primeros 3 Meses)</h3>
+            <table>
+                <tr>
+                    <th>Periodo</th>
+                    <th>Actividad Clave</th>
+                    <th>Responsables</th>
+                </tr>
+                <tr>
+                    <td><strong>Mes 1</strong></td>
+                    <td>Asamblea comunitaria, censo oficial de niños deportistas y aval institucional de la Junta de Acción Comunal (JAC).</td>
+                    <td>Comité Pro-Deporte y JAC Dinamarca</td>
+                </tr>
+                <tr>
